@@ -1,0 +1,2 @@
+It will print (x, y) = (8, 5), because movePoint function is call by values method;
+It mean movePoint function receive not reference of (x, y) but (8, 5).

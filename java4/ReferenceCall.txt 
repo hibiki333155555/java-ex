@@ -1,0 +1,7 @@
+It will print (x, y) = (100, 120) , because movePoint function is call by reference method.
+If  "p = new Point(0, 0);" is added at the (*) position, It will also print (x, y) = (100, 120).
+when "p = new Point(0, 0);" is declared, p refer new object which made by new declaration.
+That's why "p = new Point(0, 0);" don't affect point reference which is declared in test() function.
+
+
+
