@@ -1,0 +1,4 @@
+EqualPointApplication will output 
+" p1 != p2 "
+" p1 and p2 is not equal "
+because  " p1 == p2 " and equals method return true if their references are equal.
