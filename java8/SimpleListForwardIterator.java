@@ -1,8 +1,8 @@
-package java8;
 
 public class SimpleListForwardIterator implements Iterator{ 
     private SimpleList simpleList;
     private SimpleNode cur;
+
     public SimpleListForwardIterator(SimpleList simpleList){ 
         this.simpleList = simpleList;
         cur = simpleList.getNil().getNext();

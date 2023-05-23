@@ -1,4 +1,4 @@
-package java8;
+
 class SimpleNode {
     private int key;
     private SimpleNode prev;

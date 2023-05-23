@@ -1,14 +1,15 @@
-package java8;
 
 import java.util.Scanner;
+
 class IteratorApplication{
     public static void main(String[] args){
         new IteratorApplication().run();
     }
+
     void run(){
         Scanner sc = new Scanner(System.in);
-    SimpleList list = new SimpleList(); int Q = sc.nextInt();
-    for ( int i = 0; i < Q; i++ ){
+        SimpleList list = new SimpleList(); int Q = sc.nextInt();
+        for ( int i = 0; i < Q; i++ ){
             String command = sc.next();
             int key = sc.nextInt();
             if ( command.equals("insert") ){
@@ -16,7 +17,7 @@ class IteratorApplication{
             } else if ( command.equals("delete") ){
                 list.delete(key);
             }
-    }
+        }
         trace(list.forwardIterator());
         trace(list.backwardIterator());
     }
