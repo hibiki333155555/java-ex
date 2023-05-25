@@ -14,6 +14,7 @@ class SimpleList implements Aggregate{
         nil.setNext(newNode);
         newNode.setPrev(nil);
     }
+    
     public void delete(int key){
         SimpleNode node = nil.getNext();
         while(node!=nil){
