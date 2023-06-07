@@ -1,0 +1,4 @@
+  2,6 are implicit casts
+  3 is explicit casts
+The Point class is a superclass of the MovingPoint class. so, reference of type Point refer to an object of type MovingPoint
+We can notassign o2 to o3 without casting, because the MovingPoint class is a subclass of the Point class.

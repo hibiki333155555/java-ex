@@ -1,4 +1,4 @@
-
+package java4;
 public class Queue {
     private int head;
     private int tail;

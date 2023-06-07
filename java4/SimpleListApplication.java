@@ -1,3 +1,4 @@
+package java4;
 import java.util.Scanner;
 class SimpleListApplication{
     public static void main(String[] args){

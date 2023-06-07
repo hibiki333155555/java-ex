@@ -1,0 +1,3 @@
+Point class have two fields and three method.
+MovingPoint class have four fields and five methods.
+Point and MovingPoint classes have same field and they express similar behavior

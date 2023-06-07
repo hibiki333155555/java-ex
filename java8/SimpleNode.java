@@ -8,6 +8,8 @@ class SimpleNode {
         this.key = key;
     }
 
+    SimpleNode(){}
+
     int getKey() {
         return this.key;
     }

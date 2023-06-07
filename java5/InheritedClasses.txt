@@ -1,0 +1,11 @@
+Point have two fields and three methods.
+MovingPoint have two felds and three methods.
+Inheritence can reduce discription (advantages)
+
+You can excute following operation, because the MovingPoint class also has 
+the same type as the superclass Point class.
+
+ーーー
+System.out.println(p1.getDistance(m1)); 
+System.out.println(p2.getDistance(m2));
+ーーー

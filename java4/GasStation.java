@@ -1,3 +1,4 @@
+package java4;
 import java.util.Scanner;
 
 public class GasStation {
@@ -28,5 +29,5 @@ public class GasStation {
                         que[id].push(x);
                 }
         }
-}
+    }
 }

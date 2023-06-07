@@ -1,0 +1,6 @@
+When count = 2, it throws new exception. Then it catches exception. That's why it prints (2) ~ .
+In addition, the end of try catch statement "finally" statement is definetally executed. So it prints "(2) in finally clause".
+
+As mentioned above, "finally" block are definetally executed in try statement. So it prints (3) in finally clause.
+
+After while statement, of course it prints "Main program ends".

@@ -2,13 +2,13 @@ class SimpleList implements Aggregate{
     private SimpleNode nil;
 
     public SimpleList(){
-        this.nil=new SimpleNode(0);
+        this.nil = new SimpleNode(0);
         this.nil.setPrev(nil);
         this.nil.setNext(nil);
     }
 
     public void insert(int key){
-        SimpleNode newNode=new SimpleNode(key);
+        SimpleNode newNode = new SimpleNode(key);
         nil.getNext().setPrev(newNode);
         newNode.setNext(nil.getNext());
         nil.setNext(newNode);

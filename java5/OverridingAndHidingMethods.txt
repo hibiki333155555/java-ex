@@ -1,0 +1,3 @@
+methodTwo overides method in the superclass
+methodFour hides method in the superclass
+other methods cause compilation error

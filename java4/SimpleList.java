@@ -1,3 +1,4 @@
+package java4;
 class SimpleList {
     private SimpleNode head;
 

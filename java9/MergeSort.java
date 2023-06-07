@@ -4,50 +4,45 @@ public class MergeSort implements Strategy{
         mergeSort(array, 0, array.length - 1);
     }
 
-    private void mergeSort(int[] data, int left, int right) {
+    private void mergeSort(int[] array, int left, int right) {
         if (left < right) {
             int mid = (left + right) / 2;
-            mergeSort(data, left, mid);
-            mergeSort(data, mid + 1, right);
-            merge(data, left, mid, right);
+            mergeSort(array, left, mid);
+            mergeSort(array, mid + 1, right);
+
+            merge(array, left, mid, right);
         }
     }
 
-    private void merge(int[] data, int left, int mid, int right) {
+    private void merge(int[] array, int left, int mid, int right) {
         int n1 = mid - left + 1;
         int n2 = right - mid;
 
-        int[] leftArray = new int[n1];
-        int[] rightArray = new int[n2];
+        int[] L = new int[n1];
+        int[] R = new int[n2];
 
-        for (int i = 0; i < n1; ++i)
-            leftArray[i] = data[left + i];
-        for (int j = 0; j < n2; ++j)
-            rightArray[j] = data[mid + 1 + j];
+        for (int i = 0; i < n1; i++) L[i] = array[left + i];
+        for (int j = 0; j < n2; j++) R[j] = array[mid + 1 + j];
 
         int i = 0, j = 0;
         int k = left;
         while (i < n1 && j < n2) {
-            if (leftArray[i] <= rightArray[j]) {
-                data[k] = leftArray[i];
-                i++;
+            if (L[i] <= R[j]) {
+                array[k] = L[i]; i++;
             } else {
-                data[k] = rightArray[j];
-                j++;
+                array[k] = R[j]; j++;
             }
             k++;
         }
 
         while (i < n1) {
-            data[k] = leftArray[i];
-            i++;
-            k++;
+            array[k] = L[i];
+            i++; k++;
         }
 
         while (j < n2) {
-            data[k] = rightArray[j];
-            j++;
-            k++;
+            array[k] = R[j];
+            j++; k++;
         }
     }
 }
